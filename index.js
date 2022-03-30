@@ -17,12 +17,16 @@ app.post('/WAFS', (req, res) => {
 	res.render('WAFS')
 })
 
-app.post('/Browser', (req, res) => {
-	res.render('Browser')
+app.post('/BT', (req, res) => {
+	res.render('BT')
 })
 
 app.post('/PWA', (req, res) => {
 	res.render('PWA')
+})
+
+app.post('/Succes', (req, res) => {
+	res.render('Succes')
 })
 
 app.use((req, res) => {

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+	<head>
+		<%- include('layout/head'); %>
+	</head>
+
+	<body>
+        <header>
+       
+        </header>
+        <main>
+            <form action="/PWA" method="POST">
+                <fieldset>
+                    <legend>Web App From Scratch</legend>
+                    <br>
+                    <label for="teacher">Docent:</label>
+                    <br>
+                    <input type="text" id='teacher' required>
+                    <br> <br>
+                    <label for="period">Periode:</label>
+                    <br>
+                    <input type="date" id='period' required>
+                    <input type="date" required>
+                    <br>  <br>
+                    <label for="">Beoordeling:</label>
+                    <br>
+                    <label for="1">1</label>
+                    <input type='radio' name='grade' value='1' id='1'required>
+                    <label for="2">2</label>
+                    <input type='radio' name='grade' value='2' id='2'>
+                    <label for="3">3</label>
+                    <input type='radio' name='grade' value='3' id='3'>
+                    <label for="4">4</label>
+                    <input type='radio' name='grade' value='4' id='4'>
+                    <label for="5">5</label>
+                    <input type='radio' name='grade' value='5' id='5'>
+                    <br> <br>
+                    <label for="6">6</label>
+                    <input type='radio' name='grade' value='6' id="6">
+                    <label for="7">7</label>
+                    <input type='radio' name='grade' value='7' id='7'>
+                    <label for="8">8</label>
+                    <input type='radio' name='grade' value='8' id='8'>
+                    <label for="9">9</label>
+                    <input type='radio' name='grade' value='9' id='9'>
+                    <label for="10">10</label>
+                    <input type='radio' name='grade' value='10' id='10'>
+                    <br> <br>
+                    <label for="">Lesstof:</label>
+                    <br>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat vond je van de kwaliteit?" required></textarea>
+                    <br> <br>
+                    <label for="">Uitleg:</label>
+                    <br>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required></textarea>
+                    <br> <br>
+                    <label for="">Eigen inzicht:</label>
+                    <br>
+                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required></textarea>
+                    <br> <br>
+                    <button type="submit">Volgend vak </button>
+                    <br> <br>
+                </fieldset>
+            </form>
+        </main>
+	</body>
+</html>
