@@ -15,14 +15,14 @@
                     <br>
                     <label for="teacher">Docent:</label>
                     <br>
-                    <input type="text" id='teacher' required>
+                    <input type="text" id='teacher' name='teachers' value="<%= CSS ? CSS.teachers : '' %>" required>
                     <br> <br>
-                    <label for="period">Periode:</label>
+                    <label for="date">Periode:</label>
                     <br>
-                    <input type="date" id='period' required>
-                    <input type="date" required>
+                    <input type="date" name='date' value="<%= CSS ? CSS.date : '' %>" required>
+                    <input type="date" name='date' value="<%= CSS ? CSS.date : '' %>" required>
                     <br>  <br>
-                    <label for="">Beoordeling:</label>
+                    <label for="grade">Beoordeling:</label>
                     <br>
                     <label for="1">1</label>
                     <input type='radio' name='grade' value='1' id='1'required>
@@ -46,19 +46,19 @@
                     <label for="10">10</label>
                     <input type='radio' name='grade' value='10' id='10'>
                     <br> <br>
-                    <label for="">Lesstof:</label>
+                    <label for="quality">Lesstof:</label>
                     <br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat vond je van de kwaliteit?" required></textarea>
+                    <textarea name="quality" value="<%= CSS ? CSS.quality : '' %>" id="quality" cols="50" rows="5" placeholder="Wat vond je van de kwaliteit?" required></textarea>
                     <br> <br>
-                    <label for="">Uitleg:</label>
+                    <label for="explanation">Uitleg:</label>
                     <br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required></textarea>
+                    <textarea name="explanation" value="<%= CSS ? CSS.explanation : '' %>" id="explanation" cols="50" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required></textarea>
                     <br> <br>
-                    <label for="">Eigen inzicht:</label>
+                    <label for="learning">Eigen inzicht:</label>
                     <br>
-                    <textarea name="" id="" cols="50" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required></textarea>
+                    <textarea name="learning" value="<%= CSS ? CSS.learning : '' %>" id="learning" cols="50" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required></textarea>
                     <br> <br>
-                    <button type="submit">Volgend vak </button>
+                    <a href="/">Vorige</a> <button type="submit">Volgend vak </button> 
                     <br> <br>
                 </fieldset>
             </form>
