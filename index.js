@@ -36,7 +36,8 @@ app.get('/WAFS', (req, res) => {
 app.post('/WAFS', (req, res) => {
 	CSS = {
 		teachers: req.body.teachers,
-		date: req.body.date,
+		date1: req.body.date1,
+		date2: req.body.date2,
 		grade: req.body.grade,
 		quality: req.body.quality,
 		explanation: req.body.explanation,
@@ -52,7 +53,8 @@ app.get('/BT', (req, res) => {
 app.post('/BT', (req, res) => {
 	PWA = {
 		teacher: req.body.teacher,
-		date: req.body.date,
+		date1: req.body.date1,
+		date2: req.body.date2,
 		grade: req.body.grade,
 		quality: req.body.quality,
 		explanation: req.body.explanation,
@@ -68,7 +70,8 @@ app.get('/PWA', (req, res) => {
 app.post('/PWA', (req, res) => {
 	WAFS = {
 		teacher: req.body.teacher,
-		date: req.body.date,
+		date1: req.body.date1,
+		date2: req.body.date2,
 		grade: req.body.grade,
 		quality: req.body.quality,
 		explanation: req.body.explanation,
@@ -80,7 +83,8 @@ app.post('/PWA', (req, res) => {
 app.post('/Succes', (req, res) => {
 	BT = {
 		teacher: req.body.teacher,
-		date: req.body.date,
+		date1: req.body.date1,
+		date2: req.body.date2,
 		grade: req.body.grade,
 		quality: req.body.quality,
 		explanation: req.body.explanation,
