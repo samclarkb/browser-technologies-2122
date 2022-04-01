@@ -2,20 +2,19 @@
 <html lang="en"></html>
 	<head>
 		<%- include('layout/head'); %>
+        <%- include('layout/header'); %>
 	</head>
 
 	<body>
-        <header>
-       
-        </header>
         <main>
+            <p>2/5</p>
             <form action="/WAFS" method="POST">
                 <fieldset>
                     <legend>CSS To The Rescue</legend>
                     <br>
                     <label for="teacher">Docent:</label>
                     <br>
-                    <input type="text" id='teacher' name='teachers' value="<%= CSS ? CSS.teachers : '' %>" required>
+                    <input type="text" id='teacher' name='teachers' classname='teachers' value="<%= CSS ? CSS.teachers : '' %>" required>
                     <br> <br>
                     <label for="date">Periode:</label>
                     <br>

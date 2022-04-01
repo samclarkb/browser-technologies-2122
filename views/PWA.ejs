@@ -2,63 +2,103 @@
 <html lang="en"></html>
 	<head>
 		<%- include('layout/head'); %>
+        <%- include('layout/header'); %>
 	</head>
 
 	<body>
-        <header>
-       
-        </header>
+
         <main>
+            <p>4/5</p>
             <form action="/BT" method="POST">
                 <fieldset>
                     <legend>Progressive Web Apps</legend>
                     <br>
-                    <label for="teacher">Docent:</label>
+                    <label for="teachers">Docent:</label>
                     <br>
-                    <input type="text" id='teacher' name='teachers' value="<%= BT ? BT.teachers : '' %>" required>
+                    <input type="text" id='teachers' name='teachers' value="<%= PWA ? PWA.teachers : '' %>" required>
                     <br> <br>
                     <label for="date">Periode:</label>
                     <br>
-                    <input type="date" name='date' value="<%= BT ? BT.date : '' %>" required>
-                    <input type="date" name='date' value="<%= BT ? BT.date : '' %>" required>
+                    <input type="date" name='date1' value="<%= PWA ? PWA.date1 : '' %>" required>
+                    <input type="date" name='date2' value="<%= PWA ? PWA.date2 : '' %>" required>
                     <br>  <br>
                     <label for="grade">Beoordeling:</label>
                     <br>
                     <label for="1">1</label>
-                    <input type='radio' name='grade' value='1' id='1'required>
+                    <% if(PWA && PWA.grade === '1') { %>
+                    <input type='radio' name='grade' value='1' id='1'checked>
+                    <% } else { %>
+                        <input type='radio' name='grade' value='1' id='1'required>
+                        <% } %>
                     <label for="2">2</label>
-                    <input type='radio' name='grade' value='2' id='2'>
+                    <% if(PWA && PWA.grade === '2') { %>
+                        <input type='radio' name='grade' value='2' id='2'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='2' id='2'>
+                            <% } %>
                     <label for="3">3</label>
-                    <input type='radio' name='grade' value='3' id='3'>
+                    <% if(PWA && PWA.grade === '3') { %>
+                        <input type='radio' name='grade' value='3' id='3'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='3' id='3'>
+                            <% } %>
                     <label for="4">4</label>
-                    <input type='radio' name='grade' value='4' id='4'>
+                    <% if(PWA && PWA.grade === '4') { %>
+                        <input type='radio' name='grade' value='4' id='4'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='4' id='4'>
+                            <% } %>
                     <label for="5">5</label>
-                    <input type='radio' name='grade' value='5' id='5'>
+                    <% if(PWA && PWA.grade === '5') { %>
+                        <input type='radio' name='grade' value='5' id='5'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='5' id='5'>
+                            <% } %>
                     <br> <br>
                     <label for="6">6</label>
-                    <input type='radio' name='grade' value='6' id="6">
+                    <% if(PWA && PWA.grade === '6') { %>
+                        <input type='radio' name='grade' value='6' id='6'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='6' id='6'>
+                            <% } %>
                     <label for="7">7</label>
-                    <input type='radio' name='grade' value='7' id='7'>
+                    <% if(PWA && PWA.grade === '7') { %>
+                        <input type='radio' name='grade' value='7' id='7'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='7' id='7'>
+                            <% } %>
                     <label for="8">8</label>
-                    <input type='radio' name='grade' value='8' id='8'>
+                    <% if(PWA && PWA.grade === '8') { %>
+                        <input type='radio' name='grade' value='8' id='8'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='8' id='8'>
+                            <% } %>
                     <label for="9">9</label>
-                    <input type='radio' name='grade' value='9' id='9'>
+                    <% if(PWA && PWA.grade === '9') { %>
+                        <input type='radio' name='grade' value='9' id='9'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='9' id='9'>
+                            <% } %>
                     <label for="10">10</label>
-                    <input type='radio' name='grade' value='10' id='10'>
+                    <% if(PWA && PWA.grade === '10') { %>
+                        <input type='radio' name='grade' value='10' id='10'checked>
+                        <% } else { %>
+                            <input type='radio' name='grade' value='10' id='10'>
+                            <% } %>
                     <br> <br>
                     <label for="quality">Lesstof:</label>
                     <br>
-                    <textarea name="quality" value="<%= BT ? BT.quality : '' %>" id="quality" cols="50" rows="5" placeholder="Wat vond je van de kwaliteit?" required></textarea>
+                    <textarea name="quality" id='quality' id="quality" cols="30" rows="5" placeholder="Wat vond je van de kwaliteit?" required><%= PWA ? PWA.quality : '' %></textarea>
                     <br> <br>
                     <label for="explanation">Uitleg:</label>
                     <br>
-                    <textarea name="explanation" value="<%= BT ? BT.explanation : '' %>" id="explanation" cols="50" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required></textarea>
+                    <textarea name="explanation" id="explanation" cols="30" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required><%= PWA ? PWA.explanation : '' %></textarea>
                     <br> <br>
                     <label for="learning">Eigen inzicht:</label>
                     <br>
-                    <textarea name="learning" value="<%= BT ? BT.learning : '' %>" id="learning" cols="50" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required></textarea>
+                    <textarea name="learning"  id="learning" cols="30" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required><%= PWA ? PWA.learning : '' %></textarea>
                     <br> <br>
-                    <button type="submit">Volgend vak </button>
+                    <a href="/WAFS">Vorige</a> <button type="submit">Volgend vak </button> 
                     <br> <br>
                 </fieldset>
             </form>

@@ -1,7 +1,19 @@
-/* :required {
-	background-color: red;
-} */
+legend {
+	font-weight: 600;
+}
 
-/* input:invalid {
-	background-color: red;
-} */
+main {
+	max-width: 30em;
+}
+
+body {
+	/* width: 100vw; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+input:valid {
+	border: solid 0.15em green;
+	border-radius: 0.25em;
+}

@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en"></html>
 	<head>
-		<%- include('layout/head'); %>
+		<%- include('./layout/head'); %>
+        <%- include('layout/header'); %>
 	</head>
 
 	<body>
-        <header>
-            <h1>Minor Web Development Enquete</h1>
-        </header>
+     
         <main>
+            <p>Deze enquete is bedoeld voor studenten die de minor Web Development aan het volgen zijn. Per, tot nu toe, behandeld vak worden er een aantal vragen gesteld en aan jou de taak om deze vragen naar waarheid in te vullen.</p>
+            <p>1/5</p>
             <form action="/css" method="POST">
                 <fieldset>
                     <legend>Studentgegevens:</legend>
                     <br>
                     <label for="name" >Naam: </label>
                     <br>
-                    <input type="text" id='name' name='name' value="<%= Home ? Home.name : '' %>" required>
+                    <input type="text" id='name' name='name' value="<%= Home ? Home.name : '' %>" minlength="2" required>
                     <br> <br>
                     <label for="studentNmbr" >Studentnummer:</label>
                     <br>
-                    <input type="text" id='studentNmbr' name='studentNmbr' value="<%= Home ? Home.studentNmbr : '' %>" required>
+                    <input type="text" id='studentNmbr' name='studentNmbr' minlength="9" value="<%= Home ? Home.studentNmbr : '' %>" required>
                     <br> <br>
-                    <button type="submit">Volgende</button> 
+                    <button type="submit" id="button" >Volgende</button> 
                 </fieldset>
                 <br>
                 <br>
             </form>
         </main>
 	</body>
+ 
 </html>

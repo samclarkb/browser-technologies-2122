@@ -52,7 +52,7 @@ app.get('/BT', (req, res) => {
 
 app.post('/BT', (req, res) => {
 	PWA = {
-		teacher: req.body.teacher,
+		teachers: req.body.teacher,
 		date1: req.body.date1,
 		date2: req.body.date2,
 		grade: req.body.grade,
@@ -69,7 +69,7 @@ app.get('/PWA', (req, res) => {
 
 app.post('/PWA', (req, res) => {
 	WAFS = {
-		teacher: req.body.teacher,
+		teachers: req.body.teacher,
 		date1: req.body.date1,
 		date2: req.body.date2,
 		grade: req.body.grade,
@@ -82,7 +82,7 @@ app.post('/PWA', (req, res) => {
 
 app.post('/Succes', (req, res) => {
 	BT = {
-		teacher: req.body.teacher,
+		teachers: req.body.teacher,
 		date1: req.body.date1,
 		date2: req.body.date2,
 		grade: req.body.grade,
