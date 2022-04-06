@@ -15,15 +15,23 @@ De opdracht luidt als volgt: Maak een demo op basis van een user story. Zorg dat
 
 Bouw je demo in 3 lagen, volgens het principe van Progressive Enhancement. Gebruik als enhancement een Browser Technologie die je gaat onderzoeken op functionaliteit, toegankelijkheid en (browser) ondersteuning. Je onderzoekt hoe je verschillende features door verschillende browsers worden ondersteund, hoe je voor goede fallback kan zorgen en je test de features op verschillende browsers en het Device Lab.
 
-**User story:**  
-
-'Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven.'
-
 **Rubric:** 
 
 <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/rubric.png" width="800">
 
 ## :bulb: Concept
+Ik heb een applicatie gemaakt die gebasseerd is op deze user story: 'Ik wil een enquête kunnen invullen over de minor Web Development, met verschillende antwoordmogelijkheden. Als ik de enquête niet afkrijg, wil ik later weer verder gaan met waar ik ben gebleven'.
+Op de eerste pagina krijgt de gebruiker een korte introductie over de enquete en de gebruiker is geacht zijn naam en studentennummer in te vullen. Vervolgens krijgt de gebruiker per vak een aantal vragen.
+
+De essentie van de applicatie is dat hij in iedere denkbare omgeving het zo goed mogelijk doet. Ik heb progressive enhancement zo goed mogelijk proberen te implenteren door: 
+* Door geen overbodige javascript te gebruiken
+* Gebruik te maken van CSS @support
+* Gebruik te maken van het br element als fallback voor wanneer de CSS niet werkt
+* Door goed te kijken naar wat de core functionaliteit is, en er vervolgens voor zorgen dat die als eerste werkt.
+
+Tijdens het proces heb ik de applicatie op verschillende devices en in verschillende browsers getest. Dit heeft er toe geleid dat het eindproduct in iedere browser en op ieder device zijn core functionalitieten kan uitvoeren.
+
+Uiterlijk applicatie:
 
 
 ## :doughnut: Progressive enhancement
@@ -59,6 +67,7 @@ Mocht je er zelf wat aan toe willen voegen, neem vooral je tijd!
 ## :mag_right: Recources 
 - webdeasy. (z.d.). Node.js Tutorial – Basics for Beginners. webdeasy.de. Geraadpleegd op 22 maart 2022, van https://webdeasy.de/en/node-js-tutorial-en/
 - Can I use. (z.d.). Can I use. Geraadpleegd op 6 april 2022, van https://caniuse.com/
+- Dev Ed. (2020, 10 september). Input Animations With HTML And CSS [Video]. YouTube. https://www.youtube.com/watch?v=IxRJ8vplzAo
 
 ## :bookmark: License 
 Copyright (c) 2021 Sam Clark Boot, [MIT](https://github.com/samclarkb/browser-technologies-2122/blob/main/LICENSE)
