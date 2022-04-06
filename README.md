@@ -4,7 +4,7 @@
 * [Assesment](https://github.com/samclarkb/browser-technologies-2122#books-assessment)
 * [Concept](https://github.com/samclarkb/browser-technologies-2122#bulb-concept)
 * [Process](https://github.com/samclarkb/browser-technologies-2122#chart_with_upwards_trend-process)
-* [Progressive enhancement](https://github.com/samclarkb/browser-technologies-2122#doughnut-progressive_enhancement)
+* [Progressive enhancement](https://github.com/samclarkb/browser-technologies-2122#doughnut-progressive-enhancement)
 * [Wishlist](https://github.com/samclarkb/browser-technologies-2122#memo-wishlist)
 * [Installation](https://github.com/samclarkb/browser-technologies-2122#wrench-installation)
 * [Recources](https://github.com/samclarkb/browser-technologies-2122#mag_right-recources)
