@@ -11,4 +11,10 @@ const empty = () => {
 	})
 }
 
+// const forEachFallback = () => {
+//     if (forEach){
+
+//     }
+// }
+
 empty()
