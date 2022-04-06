@@ -80,7 +80,7 @@ form > fieldset button[type='submit']:hover {
 	position: relative;
 	flex-direction: column;
 	margin: 1em 0;
-	overflow: hidden;
+	overflow-x: hidden;
 	width: 20em;
 }
 
@@ -130,7 +130,7 @@ form > fieldset button[type='submit']:hover {
 
 #home input:focus + label span,
 #home input:valid + label span {
-	transform: translateY(-1em);
+	transform: translateY(-0.75em);
 	opacity: 0.75;
 }
 
