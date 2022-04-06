@@ -33,6 +33,12 @@ Tijdens het proces heb ik de applicatie op verschillende devices en in verschill
 
 Uiterlijk applicatie:
 
+|  Without CSS & Javascript | With CSS & Javascript  |   
+|---|---|
+| Functional  | Pleasurable  |  
+|  <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/functional.gif" width="400"> | <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/pleasurable.gif" width="400">  |  
+|   |   |   
+
 
 ## :doughnut: Progressive enhancement
 
