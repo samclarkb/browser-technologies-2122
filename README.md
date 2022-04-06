@@ -38,7 +38,7 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 
 **- Functional:** De gebruiker kan de enquete invullen en versturen. Ik heb de required property toegepast, zodat de gebruikers niets anders kunnen dan alle input velden invullen.
 
-**- Usable:** Door het gebruik van kleuren heb ik het contrast aangescherpt, zodat de tekst beter leesbaar is. Met dispklay flex heb ik meer witruimte toegevoegd, zodat het formulier beter leesbaar is. Ik heb het br element toegevoegd voor het geval dat display: flex niet wordt ondersteund. Wanneer de gebruiker een input correct heeft ingevuld, kleurt de border van de input groen. De gebruiker weet op deze manier waar hij aan toe is.
+**- Usable:** Door het gebruik van kleuren heb ik het contrast aangescherpt, zodat de tekst beter leesbaar is. Met dispklay flex heb ik meer witruimte toegevoegd, zodat het formulier beter leesbaar is. Ik heb het br element toegevoegd voor het geval dat display: flex niet wordt ondersteund. Wanneer de gebruiker een input correct heeft ingevuld, kleurt de border van de input groen. De gebruiker weet op deze manier waar hij aan toe is. Ik heb het * icoon achter ieder label gezet, zodat het duidelijk is dat het ingevuld moet worden.
 
 **- Pleasurable:** Om de gebruikerservaring te optimalizeren heb ik ervoor gezorgd dat de ingevulde data wordt opgeslagen. Wanneer de gebruiker iets post naar de server, wordt het daar opgeslagen en kan hij op een later moment weer verder gaan waar hij gebleven is.
 
@@ -48,7 +48,7 @@ geinteresseerd in mijn proces tijdens het maken van dit project? klik [hier](htt
 
 ## :memo: Wishlist
 Er zijn een paar dingen waar ik niet aan toe ben gekomen, maar graag had willen doen:
-* k
+* Enable button function (wel gelukt, maar niet goedgekeurd door Peter Paul)
 
 ## :wrench: Installation
 
