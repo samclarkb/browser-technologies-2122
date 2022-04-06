@@ -115,6 +115,13 @@ form > fieldset button[type='submit']:hover {
 	transition: all 0.3s ease;
 }
 
+#home form fieldset div label::before {
+	content: '\2713';
+	color: green;
+	display: none;
+	transform: translate(19em, 1em);
+}
+
 #home form fieldset div span {
 	position: absolute;
 	bottom: 0.25em;
@@ -130,4 +137,8 @@ form > fieldset button[type='submit']:hover {
 #home input:focus + label::after,
 #home input:valid + label::after {
 	transform: translateX(0%);
+}
+
+#home input:valid + label::before {
+	display: block;
 }
