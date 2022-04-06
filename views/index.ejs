@@ -14,13 +14,13 @@
                 <fieldset>
                     <legend>Studentgegevens:</legend>
                     <br>
-                    <label for="name" >Naam: </label>
+                    <label for="name" >Naam*</label>
                     <br>
-                    <input type="text" id='name' name='name' value="<%= Home ? Home.name : '' %>" minlength="2" required>
+                    <input type="text" id='name' name='name'  value="<%= Home ? Home.name : '' %>" minlength="2" >
                     <br> <br>
-                    <label for="studentNmbr" >Studentnummer:</label>
+                    <label for="studentNmbr" >Studentennummer*</label>
                     <br>
-                    <input type="text" id='studentNmbr' name='studentNmbr' minlength="9" value="<%= Home ? Home.studentNmbr : '' %>" required>
+                    <input type="text" id='studentNmbr' name='studentNmbr' required  minlength="9" maxlength="9" value="<%= Home ? Home.studentNmbr : '' %>" >
                     <br> <br>
                     <button type="submit" id="button" >Volgende</button> 
                 </fieldset>

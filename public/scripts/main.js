@@ -1,5 +1,14 @@
-// const form = document.querySelector('form')
+const input = document.querySelectorAll('input')
+const form = document.querySelector('form')
 
-// form.addEventListener('input', () => {
-// 	document.querySelector('button').disabled = !form.checkValidity()
-// })
+const empty = () => {
+	input.forEach(input => {
+		if (input.value.length == 0) {
+			form.addEventListener('submit', () => {
+				alert('Je hebt nog niet alles ingevuld')
+			})
+		}
+	})
+}
+
+empty()

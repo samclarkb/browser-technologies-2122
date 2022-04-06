@@ -7,13 +7,71 @@ main {
 }
 
 body {
-	/* width: 100vw; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	text-align: center;
+	background-color: #5f4b8bff;
+	color: white;
+}
+
+form {
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+
+form > {
+	margin: 10vw;
 }
 
 input:valid {
 	border: solid 0.15em green;
 	border-radius: 0.25em;
+}
+
+fieldset {
+	border: solid 0vw;
+	background-color: rgba(250, 250, 250, 0.5);
+	border-radius: 1vw;
+	color: black;
+}
+
+fieldset legend {
+	transform: translateY(1em);
+}
+
+@supports (display: flex) {
+	fieldset {
+		display: flex;
+		flex-direction: column;
+	}
+	form > fieldset input,
+	form > fieldset textarea {
+		margin-bottom: 1vw;
+	}
+	br {
+		display: none;
+	}
+}
+
+form > fieldset > label:nth-of-type(1) {
+	margin-top: 1em;
+}
+
+form > fieldset > button[type='submit'] {
+	margin: 1em 0;
+	width: 7.5em;
+}
+
+input {
+	max-width: 15em;
+}
+
+form > fieldset > label {
+	margin-top: 0.5em;
+}
+
+#studentNmbr {
+	width: 6em;
 }
