@@ -93,6 +93,10 @@ app.post('/Succes', (req, res) => {
 	res.render('Succes')
 })
 
+app.get('/Succes', (req, res) => {
+	res.render('Succes')
+})
+
 app.use((req, res) => {
 	res.status(404).send(':(')
 })

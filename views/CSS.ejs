@@ -13,98 +13,104 @@
                 <fieldset>
                     <legend>CSS To The Rescue</legend>
                     <br>
-                    <label for="teacher">Docent:</label>
-                    <br>
-                    <input type="text" id='teacher' name='teachers' classname='teachers' value="<%= CSS ? CSS.teachers : '' %>" required>
-                    <br> <br>
-                    <label for="date">Periode:</label>
-                    <br>
                     <div>
-                    <input type="date" name='date1' value="<%= CSS ? CSS.date1 : '' %>" required>
-                    <input type="date" name='date2' value="<%= CSS ? CSS.date2 : '' %>" required>
+                        <input type="text" id='teacher' name='teachers' classname='teachers' value="<%= CSS ? CSS.teachers : '' %>" required>
+                        <label for="teacher"> <span>Docent *</span></label>
                     </div>
+                    <br> <br>
+                        <label for="date" id='period'>Periode *</label>
+                            <input type="date" name='date1' value="<%= CSS ? CSS.date1 : '' %>" required>
+                            <input type="date" name='date2' value="<%= CSS ? CSS.date2 : '' %>" required>
+                 
                     <br>  <br>
-                    <label for="grade">Beoordeling:</label>
+                    <label for="grade" >Beoordeling *</label>
                     <br>
-                    <div>
-                    <label for="1">1</label>
-                    <% if(CSS && CSS.grade === '1') { %>
-                    <input type='radio' name='grade' value='1' id='1'checked>
-                    <% } else { %>
+                    <section> 
+                        <% if(CSS && CSS.grade === '1') { %>
+                            <input type='radio' name='grade' value='1' id='1'checked>
+                             <% } else { %>
                         <input type='radio' name='grade' value='1' id='1'required>
-                        <% } %>
-                    <label for="2">2</label>
-                    <% if(CSS && CSS.grade === '2') { %>
+                        <% } %> <label for="1">1 </label>
+                        
+                        <% if(CSS && CSS.grade === '2') { %>
                         <input type='radio' name='grade' value='2' id='2'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='2' id='2'>
-                            <% } %>
-                    <label for="3">3</label>
-                    <% if(CSS && CSS.grade === '3') { %>
+                            <% } %><label for="2">2</label>
+                           
+                             <% if(CSS && CSS.grade === '3') { %>
                         <input type='radio' name='grade' value='3' id='3'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='3' id='3'>
-                            <% } %>
-                    <label for="4">4</label>
-                    <% if(CSS && CSS.grade === '4') { %>
+                            <% } %> <label for="3">3</label>
+                           
+                             <% if(CSS && CSS.grade === '4') { %>
                         <input type='radio' name='grade' value='4' id='4'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='4' id='4'>
-                            <% } %>
-                    <label for="5">5</label>
-                    <% if(CSS && CSS.grade === '5') { %>
+                            <% } %> <label for="4">4</label>
+                             
+                             <% if(CSS && CSS.grade === '5') { %>
                         <input type='radio' name='grade' value='5' id='5'checked>
-                        <% } else { %>
+                        <% } else { %> 
                             <input type='radio' name='grade' value='5' id='5'>
-                            <% } %>
-                    <br> <br>
-                    <label for="6">6</label>
-                    <% if(CSS && CSS.grade === '6') { %>
+                            <% } %> <label for="5">5</label>
+                            </section> 
+                            <section>
+                            <br> <br>
+                            
+                              <% if(CSS && CSS.grade === '6') { %>
                         <input type='radio' name='grade' value='6' id='6'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='6' id='6'>
-                            <% } %>
-                    <label for="7">7</label>
-                    <% if(CSS && CSS.grade === '7') { %>
+                            <% } %><label for="6">6</label>
+                             
+                                 <% if(CSS && CSS.grade === '7') { %>
                         <input type='radio' name='grade' value='7' id='7'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='7' id='7'>
-                            <% } %>
-                    <label for="8">8</label>
-                    <% if(CSS && CSS.grade === '8') { %>
+                            <% } %> <label for="7">7</label>
+                             
+                               <% if(CSS && CSS.grade === '8') { %>
                         <input type='radio' name='grade' value='8' id='8'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='8' id='8'>
-                            <% } %>
-                    <label for="9">9</label>
-                    <% if(CSS && CSS.grade === '9') { %>
+                            <% } %>  <label for="8">8</label>
+                              
+                                 <% if(CSS && CSS.grade === '9') { %>
                         <input type='radio' name='grade' value='9' id='9'checked>
                         <% } else { %>
                             <input type='radio' name='grade' value='9' id='9'>
-                            <% } %>
-                    <label for="10">10</label>
-                    <% if(CSS && CSS.grade === '10') { %>
-                        <input type='radio' name='grade' value='10' id='10'checked>
-                        <% } else { %>
+                            <% } %> <label for="9">9 </label>
+                              
+                                <% if(CSS && CSS.grade === '10') { %>
+                                      <input type='radio' name='grade' value='10' id='10'checked>
+                                       <% } else { %>
                             <input type='radio' name='grade' value='10' id='10'>
-                            <% } %>
-                        </div>
-                    <br> <br>
-                    <label for="quality">Lesstof:</label>
-                    <br>
-                    <textarea name="quality" id='quality' id="quality" cols="30" rows="5" placeholder="Wat vond je van de kwaliteit?" required><%= CSS ? CSS.quality : '' %></textarea>
-                    <br> <br>
-                    <label for="explanation">Uitleg:</label>
-                    <br>
-                    <textarea name="explanation" id="explanation" cols="30" rows="5" placeholder="Wat vond je van de uitleg tijdens het vak?" required><%= CSS ? CSS.explanation : '' %></textarea>
-                    <br> <br>
-                    <label for="learning">Eigen inzicht:</label>
-                    <br>
-                    <textarea name="learning"  id="learning" cols="30" rows="5" placeholder="Wat heb je geleerd tijdens dit vak?" required><%= CSS ? CSS.learning : '' %></textarea>
+                            <% } %><label for="10">10 </label>
+                        </section>
                     <br> <br>
                     <div>
-                    <a href="/">Vorige</a> <button type="submit">Volgend vak </button> 
-                </div>
+                        <input type="text" id='quality' name="quality" value="<%= CSS ? CSS.quality: '' %>" required>
+                        <label for="quality"><span>Lesstof *</span></label>
+                    </div>
+                    <textarea name="quality" id='quality' id="quality" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.quality : '' %></textarea>
+                    <br> <br>
+                    <div>
+                        <input type="text" id='explanation' name="explanation" value="<%= CSS ? CSS.explanation : '' %>" required>
+                        <label for="explanation"> <span>Uitleg *</span></label>
+                    </div>
+                    <textarea name="explanation" id="explanation" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.explanation : '' %></textarea>
+                    <br> <br>
+                    <div>
+                        <input type="text" id='learning' name="learning" value="<%= CSS ? CSS.learning : '' %>" required>
+                        <label for="learning"> <span>Eigen inzicht *</span> </label>
+                    </div>
+                    <textarea name="learning"  id="learning" cols="30" rows="3" placeholder="Opmerking: " ><%= CSS ? CSS.learning : '' %></textarea>
+                    <br> <br>
+                    <section>
+                        <a href="/">Vorige</a> <button type="submit">Volgende</button> 
+                    </section>
                     <br> <br>
                 </fieldset>
             </form>
