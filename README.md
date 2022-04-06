@@ -5,6 +5,7 @@
 * [Concept](https://github.com/samclarkb/browser-technologies-2122#bulb-concept)
 * [Process](https://github.com/samclarkb/browser-technologies-2122#chart_with_upwards_trend-process)
 * [Progressive enhancement](https://github.com/samclarkb/browser-technologies-2122#doughnut-progressive-enhancement)
+* [Wireflow](https://github.com/samclarkb/browser-technologies-2122#arrow_forward-wireflow)
 * [Wishlist](https://github.com/samclarkb/browser-technologies-2122#memo-wishlist)
 * [Installation](https://github.com/samclarkb/browser-technologies-2122#wrench-installation)
 * [Recources](https://github.com/samclarkb/browser-technologies-2122#mag_right-recources)
@@ -55,6 +56,10 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 **- Usable:** Door het gebruik van kleuren heb ik het contrast aangescherpt, zodat de tekst beter leesbaar is. Met dispklay flex heb ik meer witruimte toegevoegd, zodat het formulier beter leesbaar is. Ik heb het br element toegevoegd voor het geval dat display: flex niet wordt ondersteund. Wanneer de gebruiker een input correct heeft ingevuld, kleurt de border van de input groen. De gebruiker weet op deze manier waar hij aan toe is. Ik heb het * icoon achter ieder label gezet, zodat het duidelijk is dat het ingevuld moet worden.
 
 **- Pleasurable:** Om de gebruikerservaring te optimalizeren heb ik ervoor gezorgd dat de ingevulde data wordt opgeslagen. Wanneer de gebruiker iets post naar de server, wordt het daar opgeslagen en kan hij op een later moment weer verder gaan waar hij gebleven is.
+
+## :arrow_forward: Wireflow
+
+<img src="https://github.com/samclarkb/browser-technologies 2122/blob/main/public/images/wireflow.png" width="600">
 
 ## :chart_with_upwards_trend: Process
 
