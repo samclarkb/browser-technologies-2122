@@ -1,7 +1,3 @@
-legend {
-	font-weight: 600;
-}
-
 main {
 	max-width: 30em;
 }
@@ -25,24 +21,27 @@ form > {
 	margin: 10vw;
 }
 
-input:valid {
-	border: solid 0.15em green;
-	border-radius: 0.25em;
+input:focus {
+	border-bottom: solid 0.15em #5f4b8bff;
+	transform: scaleX(1);
+	transform-origin: left;
 }
 
 fieldset {
 	border: solid 0vw;
-	background-color: rgba(250, 250, 250, 0.25);
+	background-color: rgba(250, 250, 250, 0.4);
 	border-radius: 1vw;
 	color: black;
 }
 
 fieldset legend {
 	transform: translateY(1em);
+	font-weight: 600;
+	margin-bottom: 0.5em;
 }
 
 @supports (display: flex) {
-	fieldset {
+	form > fieldset {
 		display: flex;
 		flex-direction: column;
 	}
@@ -59,19 +58,75 @@ form > fieldset > label:nth-of-type(1) {
 	margin-top: 1em;
 }
 
-form > fieldset > button[type='submit'] {
+form > fieldset button[type='submit'] {
 	margin: 1em 0;
 	width: 7.5em;
+	background-color: #5f4b8bff;
+	color: white;
+	border: none;
+	padding: 0.5em 0;
+	border-radius: 0.5em;
+	box-shadow: 0.3em 0.3em 0.25em rgba(0, 0, 0, 0.5);
+	transition: all 0.2s ease;
 }
 
-input {
-	max-width: 15em;
+form > fieldset button[type='submit']:hover {
+	transform: translateY(-0.15em);
 }
 
-form > fieldset > label {
-	margin-top: 0.5em;
+#home form fieldset div {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	margin: 1em 0;
+	overflow: hidden;
+	width: 20em;
 }
 
-#studentNmbr {
-	width: 6em;
+#home form fieldset div input {
+	width: 100%;
+	height: 100%;
+	padding-top: 0.25em;
+	background: transparent;
+	border: none;
+	outline: none;
+	transform: translateY(1em);
+}
+
+#home form fieldset div label {
+	position: absolute;
+	bottom: 0em;
+	left: 0em;
+	width: 100%;
+	height: 100%;
+	border-bottom: solid 0.1em rgba(250, 250, 250, 0.4);
+}
+
+#home form fieldset div label::after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -1.5px;
+	left: 0em;
+	border-bottom: solid 0.1em #5f4b8bff;
+	transform: translateX(-100%);
+	transition: all 0.3s ease;
+}
+
+#home form fieldset div span {
+	position: absolute;
+	bottom: 0.25em;
+	transition: all 0.3s ease;
+}
+
+#home input:focus + label span,
+#home input:valid + label span {
+	transform: translateY(-1em);
+	opacity: 0.5;
+}
+
+#home input:focus + label::after,
+#home input:valid + label::after {
+	transform: translateX(0%);
 }

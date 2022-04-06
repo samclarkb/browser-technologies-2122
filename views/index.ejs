@@ -6,20 +6,26 @@
 
 	<body>
         <%- include('layout/header'); %>
-        <main>
+        <main id='home'>
             <p>Deze enquete is bedoeld voor studenten die de minor Web Development aan het volgen zijn. Per, tot nu toe, behandeld vak worden er een aantal vragen gesteld en aan jou de taak om deze vragen naar waarheid in te vullen.</p>
             <p>1/5</p>
             <form action="/css" method="POST">
                 <fieldset>
                     <legend>Studentgegevens:</legend>
                     <br>
-                    <label for="name" >Naam*</label>
-                    <br>
-                    <input type="text" id='name' name='name' value="<%= Home ? Home.name : '' %>" minlength="2" >
+           <div>
+               <input type="text" id='name' name='name' required value="<%= Home ? Home.name : '' %>"  >
+               <!-- <br> -->
+               <label for="name" >
+                   <span>Naam *</span> 
+                </label>
+            </div>
                     <br> <br>
-                    <label for="studentNmbr" >Studentennummer*</label>
-                    <br>
-                    <input type="text" id='studentNmbr' name='studentNmbr' required  minlength="9" maxlength="9" value="<%= Home ? Home.studentNmbr : '' %>" >
+                    <div>
+                        <input type="text" id='studentNmbr' name='studentNmbr' value="<%= Home ? Home.studentNmbr : '' %>" >
+                        <!-- <br> -->
+                    <label for="studentNmbr" ><span>Studentennummer *</span></label>
+                </div>
                     <br> <br>
                     <button type="submit" id="button" >Volgende</button> 
                 </fieldset>
