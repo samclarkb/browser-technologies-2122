@@ -59,7 +59,7 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 
 ## :arrow_forward: Wireflow
 
-<img src="https://github.com/samclarkb/browser-technologies 2122/blob/main/public/images/wireflow.png" width="600">
+<img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/wireflow.png" width="1000">
 
 ## :chart_with_upwards_trend: Process
 
