@@ -32,10 +32,11 @@ fieldset {
 	background-color: rgba(250, 250, 250, 0.4);
 	border-radius: 1vw;
 	color: black;
+	padding: 2em;
 }
 
 fieldset legend {
-	transform: translateY(1em);
+	transform: translate(-0.1em, 2em);
 	font-weight: 600;
 	margin-bottom: 0.5em;
 }
@@ -123,7 +124,7 @@ form > fieldset button[type='submit']:hover {
 #home input:focus + label span,
 #home input:valid + label span {
 	transform: translateY(-1em);
-	opacity: 0.5;
+	opacity: 0.75;
 }
 
 #home input:focus + label::after,
