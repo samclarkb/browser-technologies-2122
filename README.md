@@ -55,7 +55,7 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 
 **- Usable:** Door het gebruik van kleuren heb ik het contrast aangescherpt, zodat de tekst beter leesbaar is. Met dispklay flex heb ik meer witruimte toegevoegd, zodat het formulier beter leesbaar is. Ik heb het br element toegevoegd voor het geval dat display: flex niet wordt ondersteund. Wanneer de gebruiker een input correct heeft ingevuld, kleurt de border van de input groen. De gebruiker weet op deze manier waar hij aan toe is. Ik heb het * icoon achter ieder label gezet, zodat het duidelijk is dat het ingevuld moet worden.
 
-**- Pleasurable:** Om de gebruikerservaring te optimalizeren heb ik ervoor gezorgd dat de ingevulde data wordt opgeslagen. Wanneer de gebruiker iets post naar de server, wordt het daar opgeslagen en kan hij op een later moment weer verder gaan waar hij gebleven is.
+**- Pleasurable:** Om de gebruikerservaring te optimalizeren heb ik ervoor gezorgd dat de ingevulde data wordt opgeslagen. Wanneer de gebruiker iets post naar de server, wordt het daar opgeslagen en kan hij op een later moment weer verder gaan waar hij gebleven is. De input velden worden geanimeerd wanneer de focus state wordt aangesproken en de wanneer de input velden valide zijn ingevuld, wordt er een check teken weergegeven.
 
 ## :arrow_forward: Wireflow
 
