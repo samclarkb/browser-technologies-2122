@@ -89,6 +89,10 @@ form > fieldset button[type='submit'] {
 	transition: all 0.2s ease;
 }
 
+form > fieldset button[type='submit']:focus {
+	outline: white;
+}
+
 form > fieldset button[type='submit']:hover,
 form fieldset section a:hover,
 input[type='radio'] + label:hover,
