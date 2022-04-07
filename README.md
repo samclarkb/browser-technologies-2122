@@ -63,22 +63,55 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/wireflow.png" width="1000">
 
 ## :globe_with_meridians: Browser Report
+<details>
+  <summary>Chromium desktop (Google Chrome, Versie 99)</summary>
+Ik heb de applicatie gemaakt ik deze browser, dus mijn 'ideale' versie van de applicatie is te zien op deze browser. Het proces hiervan heb ik beschreven in mijn wiki.
+  
+  </details>
+ 
 
-**Chromium desktop**
+<details>
+  <summary> Niet Chromium desktop (Safari, versie 14.0)</summary>
 
-**Niet Chromium desktop**
+Tijdens het test van mijn applicatie in Safari kwam ik achter een aantal fouten/bugs. Op basis van deze bugs heb ik de applicatie aangepast.
 
-**IOS mobile**
+Het eerste wat mij opviel was dat mijn input type date er niet hetzelfde uitziet als op Chrome. Sterker nog input type date wordt niet ondersteund in Safari (versie 14 of lager). Safari leest input type = date als input type = willekeurig. Ik kreeg dus twee lege input velden te zien boven het kopje periode. Als Fallback heb ik in beide input velden een placeholder toegevoegd zodat de gebruiker weet wat hij moet invullen.
+  
+<img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/safariDate.png" width="300">  
+  
+In deze versie van Safari doet de focus state het niet op button type submit. Wat wel echt raar is, want volgens Can I Use wordt :focus op iedere browser ondersteund. Ik heb hier helaas geen oplossing voor kunnen vinden.
+  
+Vanwege het meerdere malen gebruik van het br element is de pagina nog goed zichtbaar wanneer ik de CSS uitzet in Safari. De enquete werkt nog en het is duidelijk welk input bij welk label hoort.
+  
+<img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/safariGeenCSS.png" width="300"> 
+  
+Het enige wat ik met Javascript heb geschreven is een fallback voor de requierd property. En aangezien de requierd property werkt in Safari, veranderd er niks aan de applicatie wanneer ik Javascript uitzet.
+  </details>
+  
+  <details>
+  <summary>IOS mobile</summary>
 
-**Android mobile**
+  
+  </details>
+  <details>
+  <summary>Android mobile</summary>
+
+  
+  </details>
+
+
+
 
 ## :chart_with_upwards_trend: Process
 
 geinteresseerd in mijn proces tijdens het maken van dit project? klik [hier](https://github.com/samclarkb/browser-technologies-2122/wiki/Proces)!
 
+
+
 ## :memo: Wishlist
 Er zijn een paar dingen waar ik niet aan toe ben gekomen, maar graag had willen doen:
 * Enable button function (wel gelukt, maar niet goedgekeurd door Peter Paul)
+* Focus state 'fixen' in Safari (versie 14)
 
 ## :wrench: Installation
 
