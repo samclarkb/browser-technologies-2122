@@ -91,22 +91,17 @@
                     <br> <br>
                     <div>
                         <input type="text" id='quality' name="quality" value="<%= BT ? BT.quality: '' %>" required>
-                        <label for="quality"><span>Lesstof *</span></label>
+                        <label for="quality"><span>Wat heb je aan de Lesstof gehad? *</span></label>
                     </div>
-                    <textarea name="quality" id='quality' id="quality" cols="30" rows="3" placeholder="Opmerking:" ><%= BT ? BT.quality : '' %></textarea>
                     <br> <br>
                     <div>
                         <input type="text" id='explanation' name="explanation" value="<%= BT ? BT.explanation : '' %>" required>
-                        <label for="explanation"> <span>Uitleg *</span></label>
-                    </div>
-                    <textarea name="explanation" id="explanation" cols="30" rows="3" placeholder="Opmerking:" ><%= BT ? BT.explanation : '' %></textarea>
-                    <br> <br>
+                        <label for="explanation"> <span>Wat vond je van de uitleg? *</span></label>
+                    </div>                    <br> <br>
                     <div>
                         <input type="text" id='learning' name="learning" value="<%= BT ? BT.learning : '' %>" required>
-                        <label for="learning"> <span>Eigen inzicht *</span> </label>
-                    </div>
-                    <textarea name="learning"  id="learning" cols="30" rows="3" placeholder="Opmerking: " ><%= BT ? BT.learning : '' %></textarea>
-                    <br> <br>
+                        <label for="learning"> <span>Wat heb je geleerd? *</span> </label>
+                    </div>             <br> <br>
                     <section>
                         <a href="/PWA">Vorige</a> <button type="submit">Volgende</button> 
                     </section>

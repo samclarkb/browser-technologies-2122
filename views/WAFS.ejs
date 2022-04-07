@@ -91,21 +91,19 @@
                     <br> <br>
                     <div>
                         <input type="text" id='quality' name="quality" value="<%= WAFS ? WAFS.quality: '' %>" required>
-                        <label for="quality"><span>Lesstof *</span></label>
+                        <label for="quality"><span>Wat heb je aan de Lesstof gehad? *</span></label>
                     </div>
-                    <textarea name="quality" id='quality' id="quality" cols="30" rows="3" placeholder="Opmerking:" ><%= WAFS ? WAFS.quality : '' %></textarea>
                     <br> <br>
                     <div>
                         <input type="text" id='explanation' name="explanation" value="<%= WAFS ? WAFS.explanation : '' %>" required>
-                        <label for="explanation"> <span>Uitleg *</span></label>
+                        <label for="explanation"> <span>Wat vond je van de uitleg? *</span></label>
                     </div>
-                    <textarea name="explanation" id="explanation" cols="30" rows="3" placeholder="Opmerking:" ><%= WAFS ? WAFS.explanation : '' %></textarea>
+                  
                     <br> <br>
                     <div>
                         <input type="text" id='learning' name="learning" value="<%= WAFS ? WAFS.learning : '' %>" required>
-                        <label for="learning"> <span>Eigen inzicht *</span> </label>
+                        <label for="learning"> <span>Wat heb je geleerd? *</span> </label>
                     </div>
-                    <textarea name="learning"  id="learning" cols="30" rows="3" placeholder="Opmerking: " ><%= WAFS ? WAFS.learning : '' %></textarea>
                     <br> <br>
                     <section>
                         <a href="/CSS">Vorige</a> <button type="submit">Volgende</button> 
