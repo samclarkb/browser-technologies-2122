@@ -116,7 +116,8 @@ geinteresseerd in mijn proces tijdens het maken van dit project? klik [hier](htt
 ## :memo: Wishlist
 Er zijn een paar dingen waar ik niet aan toe ben gekomen, maar graag had willen doen:
 * Enable button function (wel gelukt, maar niet goedgekeurd door Peter Paul)
-* Focus state 'fixen' in Safari (versie 14)
+* Focus state toevoegen aan de radio buttons
+* Form grootte aanpassen wanneer de CSS is uitgeschakeld
 
 ## :wrench: Installation
 
