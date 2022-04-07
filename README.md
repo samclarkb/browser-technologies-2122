@@ -103,9 +103,8 @@ Het enige wat ik met Javascript heb geschreven is een fallback voor de requierd 
   Het uitzetten van Javascript heeft, net zoals bij Safari, geen effect op de applicatie. 
   </details>
   <details>
-  <summary>Android mobile</summary>
-
-  
+  <summary>Android mobile (Nexus LG)</summary>
+  Er zat geen verschil in uiterlijk en functionaliteit tussen het Ios en Android device.
   </details>
 
 ## :chart_with_upwards_trend: Process
