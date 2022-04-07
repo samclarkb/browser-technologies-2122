@@ -18,13 +18,9 @@
                         <label for="teachers"> <span>Docent *</span></label>
                     </div>
                     <br> <br>
-                   
-                      
-                            <input type="date" name='date1' value="<%= CSS ? CSS.date1 : '' %>" required>
-                            <input type="date" name='date2' value="<%= CSS ? CSS.date2 : '' %>" required>
+                            <input type="date" name='date1' placeholder='Begin datum' value="<%= CSS ? CSS.date1 : '' %>" required>
+                            <input type="date" name='date2' placeholder='Eind datum' value="<%= CSS ? CSS.date2 : '' %>" required>
                             <label for="date" id='period'>Periode *</label>
-                      
-                 
                     <br>  <br>
                     <label for="grade" >Beoordeling *</label>
                     <br>
@@ -97,19 +93,19 @@
                         <input type="text" id='quality' name="quality" value="<%= CSS ? CSS.quality: '' %>" required>
                         <label for="quality"><span>Lesstof *</span></label>
                     </div>
-                    <textarea name="quality" id='quality' id="quality" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.quality : '' %></textarea>
+                    <!-- <textarea name="quality" id='quality' id="quality" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.quality : '' %></textarea> -->
                     <br> <br>
                     <div>
                         <input type="text" id='explanation' name="explanation" value="<%= CSS ? CSS.explanation : '' %>" required>
                         <label for="explanation"> <span>Uitleg *</span></label>
                     </div>
-                    <textarea name="explanation" id="explanation" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.explanation : '' %></textarea>
+                    <!-- <textarea name="explanation" id="explanation" cols="30" rows="3" placeholder="Opmerking:" ><%= CSS ? CSS.explanation : '' %></textarea> -->
                     <br> <br>
                     <div>
-                        <input type="text" id='learning' name="learning" value="<%= CSS ? CSS.learning : '' %>" required>
+                        <input type="text" id='learning' name="learning"  value="<%= CSS ? CSS.learning : '' %>" required>
                         <label for="learning"> <span>Eigen inzicht *</span> </label>
                     </div>
-                    <textarea name="learning"  id="learning" cols="30" rows="3" placeholder="Opmerking: " ><%= CSS ? CSS.learning : '' %></textarea>
+                    <!-- <textarea name="learning"  id="learning" cols="30" rows="3" placeholder="Opmerking: " ><%= CSS ? CSS.learning : '' %></textarea> -->
                     <br> <br>
                     <section>
                         <a href="/">Vorige</a> <button type="submit">Volgende</button> 
