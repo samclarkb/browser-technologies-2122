@@ -89,9 +89,18 @@ Het enige wat ik met Javascript heb geschreven is een fallback voor de requierd 
   </details>
   
   <details>
-  <summary>IOS mobile</summary>
+  <summary>IOS mobile (I phone XS)</summary>
+  Toen ik de applicatie opende op mijn Iphone zag ik gelijk twee lelijkheidjes. Het eerste wat me opviel was dat de introductie test niet voledig getoond werd. Dit heb ik simpel opgelost door een max-width van 80vw op het element te zetten. Het andere waar ik tegen aanliep was dat alle inputs dwars op de type lijn zaten. Na een tijdje zoeken kwam ik erachter dat er een margin-bottom van 1vw op zat. Vervolgens heb ik 1vw vervangen door 1em.
 
+<img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/iosBug.jpg"
+  width="300"> 
   
+  Het uizetten van de CSS gaf ook nog een probleem. Het formulier was ten opzichte van de titel en de introductie tekst veel te klein. 
+  
+  <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/iosGeenCSS.png"
+  width="300"> 
+  
+  Het uitzetten van Javascript heeft, net zoals bij Safari, geen effect op de applicatie. 
   </details>
   <details>
   <summary>Android mobile</summary>
