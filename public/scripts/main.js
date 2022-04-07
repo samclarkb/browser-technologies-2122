@@ -3,12 +3,12 @@ var form = document.querySelector('form')
 
 function empty() {
 	form.addEventListener('submit', function (event) {
-		input.forEach(function (input) {
-			if (input.value.length == 0) {
+		for (var i = 0; i < input.length; i++) {
+			if (input[0].value.length == 0) {
 				event.preventDefault()
 				alert('Nog niet alle velden zijn ingevuld')
 			}
-		})
+		}
 	})
 }
 
