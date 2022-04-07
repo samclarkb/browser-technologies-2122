@@ -1,9 +1,9 @@
-const input = document.querySelectorAll('input')
-const form = document.querySelector('form')
+var input = document.querySelectorAll('input')
+var form = document.querySelector('form')
 
-const empty = () => {
-	form.addEventListener('submit', event => {
-		input.forEach(input => {
+function empty() {
+	form.addEventListener('submit', function (event) {
+		input.forEach(function (input) {
 			if (input.value.length == 0) {
 				event.preventDefault()
 				alert('Nog niet alle velden zijn ingevuld')

@@ -93,7 +93,7 @@ form > fieldset button[type='submit'] {
 }
 
 form > fieldset button[type='submit']:focus {
-	outline: white;
+	outline: 0.2em solid white;
 }
 
 form > fieldset button[type='submit']:hover,
