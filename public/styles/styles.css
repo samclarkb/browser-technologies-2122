@@ -1,5 +1,8 @@
 main {
-	max-width: 30em;
+	max-width: 25em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 body {
@@ -48,7 +51,7 @@ fieldset legend {
 	}
 	form > fieldset input,
 	form > fieldset textarea {
-		margin-bottom: 1vw;
+		margin-bottom: 1em;
 	}
 	br {
 		display: none;
@@ -271,4 +274,8 @@ article > p:nth-of-type(2) {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+}
+
+main > p:nth-of-type(1) {
+	max-width: 80vw;
 }
