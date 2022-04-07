@@ -6,6 +6,7 @@
 * [Process](https://github.com/samclarkb/browser-technologies-2122#chart_with_upwards_trend-process)
 * [Progressive enhancement](https://github.com/samclarkb/browser-technologies-2122#doughnut-progressive-enhancement)
 * [Wireflow](https://github.com/samclarkb/browser-technologies-2122#arrow_forward-wireflow)
+* [Browser report](https://github.com/samclarkb/browser-technologies-2122#globe_with_meridians-browser-report)
 * [Wishlist](https://github.com/samclarkb/browser-technologies-2122#memo-wishlist)
 * [Installation](https://github.com/samclarkb/browser-technologies-2122#wrench-installation)
 * [Recources](https://github.com/samclarkb/browser-technologies-2122#mag_right-recources)
@@ -60,6 +61,16 @@ De kern functionaliteiten van een website moeten het ten alle tijden doen, dat i
 ## :arrow_forward: Wireflow
 
 <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/wireflow.png" width="1000">
+
+## :globe_with_meridians: Browser Report
+
+**Chromium desktop**
+
+**Niet Chromium desktop**
+
+**IOS mobile**
+
+**Android mobile**
 
 ## :chart_with_upwards_trend: Process
 
