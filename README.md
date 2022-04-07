@@ -95,7 +95,7 @@ Het enige wat ik met Javascript heb geschreven is een fallback voor de requierd 
 <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/iosBug.jpg"
   width="300"> 
   
-  Het uizetten van de CSS gaf ook nog een probleem. Het formulier was ten opzichte van de titel en de introductie tekst veel te klein. 
+  Het uizetten van de CSS gaf ook nog een probleem. Het formulier was ten opzichte van de titel en de introductie tekst veel te klein. Het is me tot op heden helaas niet gelukt om dit probleem op te lossen.
   
   <img src="https://github.com/samclarkb/browser-technologies-2122/blob/main/public/images/iosGeenCSS.png"
   width="300"> 
@@ -107,9 +107,6 @@ Het enige wat ik met Javascript heb geschreven is een fallback voor de requierd 
 
   
   </details>
-
-
-
 
 ## :chart_with_upwards_trend: Process
 
