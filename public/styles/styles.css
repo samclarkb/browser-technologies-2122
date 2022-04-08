@@ -129,6 +129,7 @@ form fieldset div label {
 	width: 100%;
 	height: 100%;
 	border-bottom: solid 0.1em rgba(250, 250, 250, 0.4);
+	pointer-events: none;
 }
 
 form fieldset div label::after {
@@ -140,6 +141,7 @@ form fieldset div label::after {
 	left: 0em;
 	border-bottom: solid 0.1em #5f4b8bff;
 	transition: all 0.3s ease;
+	pointer-events: none;
 }
 
 form fieldset div label::before {
@@ -147,6 +149,7 @@ form fieldset div label::before {
 	color: green;
 	display: none;
 	transform: translate(18em, 1em);
+	pointer-events: none;
 }
 
 form fieldset label::before {
